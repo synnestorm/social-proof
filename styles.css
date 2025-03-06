@@ -1,0 +1,210 @@
+body {
+  max-width: 1950px;
+  margin: 0;
+  padding: 0;
+  background-image: url(images/bg-pattern-top-desktop.svg),
+    url(images/bg-pattern-bottom-mobile.svg);
+  background-size: cover;
+  font-family: "League Spartan";
+}
+
+.first-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 90px 60px 60px 150px;
+}
+
+h1 {
+  font-size: 60px;
+  color: hsl(300, 43%, 22%);
+  font-weight: bold;
+  margin-left: 150px;
+}
+
+p.info {
+  color: hsl(300, 43%, 22%);
+  font-size: 23px;
+  line-height: 1.7;
+  margin-left: 150px;
+}
+
+p.five {
+  background-color: hsla(303, 10%, 53%, 0.2);
+  color: hsl(300, 43%, 22%);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 50px 15px 50px;
+  margin-right: 450px;
+  border-radius: 5px;
+}
+
+p.one {
+  position: relative;
+  top: 30px;
+  right: 20px;
+}
+
+p.two {
+  position: relative;
+  top: 60px;
+  left: 100px;
+}
+
+p.three {
+  position: relative;
+  top: 90px;
+  left: 190px;
+}
+
+img.stars {
+  padding-right: 5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.review-one {
+  background-color: hsl(300, 43%, 22%);
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  right: 20px;
+}
+
+.review-two {
+  background-color: hsl(300, 43%, 22%);
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  top: 20px;
+  right: 10px;
+}
+
+.review-three {
+  background-color: hsl(300, 43%, 22%);
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  top: 40px;
+}
+
+img.profile {
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.customer {
+  position: relative;
+  top: -90px;
+  left: 120px;
+}
+
+p.text {
+  text-align: center;
+  position: relative;
+  top: -70px;
+  font-size: 18px;
+  line-height: 1.4;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+span {
+  color: hsl(333, 80%, 67%);
+  font-size: 16px;
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 100px;
+  color: hsl(300, 43%, 22%);
+}
+
+a {
+  color: hsl(333, 80%, 67%);
+}
+
+@media only screen and (max-width: 1900px) {
+  .first-container {
+    margin: 20px 10px 10px 10px;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  .first-container {
+    margin: 20px 10px 10px 10px;
+    justify-content: center;
+  }
+  h1 {
+    margin-left: 0px;
+  }
+  p.info {
+    margin-left: 0px;
+  }
+  p.five {
+    margin-right: 100px;
+  }
+  .container {
+    gap: 5px;
+  }
+  .attribution {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .review-one,
+  .review-two,
+  .review-three {
+    position: static;
+  }
+
+  p.one,
+  p.two,
+  p.three {
+    position: static;
+  }
+  .first-container {
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  p {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  p.five {
+    text-align: center;
+    font-size: 16px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  span {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+}
